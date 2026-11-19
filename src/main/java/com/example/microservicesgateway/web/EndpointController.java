@@ -1,6 +1,6 @@
-package dev.shelenkov.microservicesgateway.web;
+package com.example.microservicesgateway.web;
 
-import dev.shelenkov.microservicesgateway.adapter.BackendAdapter;
+import com.example.microservicesgateway.adapter.BackendAdapter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

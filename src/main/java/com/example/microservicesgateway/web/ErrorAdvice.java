@@ -1,4 +1,4 @@
-package dev.shelenkov.microservicesgateway.web;
+package com.example.microservicesgateway.web;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

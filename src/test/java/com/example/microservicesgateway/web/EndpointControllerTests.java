@@ -1,13 +1,15 @@
-package dev.shelenkov.microservicesgateway.web;
+package com.example.microservicesgateway.web;
 
-import dev.shelenkov.microservicesgateway.adapter.BackendAdapter;
+import com.example.microservicesgateway.adapter.BackendAdapter;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+
+import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
+
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.web.client.RestClientException;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static org.hamcrest.Matchers.startsWith;
 import static org.mockito.Mockito.when;
@@ -20,7 +22,7 @@ public class EndpointControllerTests {
     @Autowired
     private MockMvc mockMvc;
 
-    @MockBean
+    @MockitoBean
     private BackendAdapter backendAdapter;
 
     @Test
