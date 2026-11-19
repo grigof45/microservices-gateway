@@ -9,7 +9,7 @@ On the base of this repository gateway kubernetes pods are created.
 
 ## Prerequisites
 
-- Java 11
+- Java 25
 
 ## License
 
